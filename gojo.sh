@@ -1,6 +1,5 @@
-#!/bin/bash
+#!/bin/zsh
 # Author: Flocea Dominic https://github.com/domeeno
-
 
 prompt_hello() {
   read -p "Hi Dom! You want to start a new project? (y/n): " -n 1 -r
@@ -27,6 +26,11 @@ init_new_project() {
   fi
 }
 
-prompt_hello
-
+if [ "$1" = "dev" ] ; then
+  prompt_hello
+elif [ "$1" = "install" ]; then
+  echo "not implemented" 
+else
+  echo "unrecognized command"
+fi
 

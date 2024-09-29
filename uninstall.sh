@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # Author: Flocea Dominic https://github.com/domeeno
 
 source env.sh
