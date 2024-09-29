@@ -22,7 +22,9 @@ install_local()
   fi
 }
 
+# Install
 install_local
 
+# Update source
 source "$HOME/.zshrc"
 

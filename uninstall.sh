@@ -17,5 +17,9 @@ uninstall_local()
   fi
 }
 
+# Uninstall
 uninstall_local
+
+# Update source
+source "$HOME/.zshrc"
 
