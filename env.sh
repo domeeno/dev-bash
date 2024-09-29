@@ -4,5 +4,5 @@
 # Source file for some common variables used in install.sh/uninstall.sh
 
 export filename="gojo"
-export filepath="$HOME/.local/bin/$filename"
+export filepath="/bin/$filename"
 
