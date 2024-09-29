@@ -1,10 +1,9 @@
-#!/bin/zsh
+#!/bin/bash
 # Author: Flocea Dominic https://github.com/domeeno
 
 source env.sh
 
-uninstall_local()
-{
+function uninstall_local() {
   if ! [ -f "$filepath" ]; then
     echo "interesting, '$filename' is not installed at $filepath"
     return 0
@@ -19,7 +18,4 @@ uninstall_local()
 
 # Uninstall
 uninstall_local
-
-# Update source
-source "$HOME/.zshrc"
 

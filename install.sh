@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Author: Flocea Dominic https://github.com/domeeno
 
 source env.sh
@@ -6,7 +6,7 @@ source env.sh
 install_local()
 {
   if [ -f "$filepath" ]; then
-    echo "interesting, '$filename' is already installed at $filepath"
+    echo "'$filename' is already installed at $filepath"
     read -p "update the script? (y/n) " -n 1 -r
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
@@ -18,13 +18,10 @@ install_local()
   if cp "./$filename.sh" "$filepath"; then
     echo "great, installed '$filename' at $filepath"
   else
-    echo "downer, couldn't install '$filename' at $filepath"
+    echo "couldn't install '$filename' at $filepath"
   fi
 }
 
 # Install
 install_local
-
-# Update source
-source "$HOME/.zshrc"
 

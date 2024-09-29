@@ -1,7 +1,15 @@
-#!/bin/zsh
+#!/bin/bash
 # Author: Flocea Dominic https://github.com/domeeno
 
-prompt_hello() {
+## Installing dependencies
+# Keep track of manually installed dependencies through apt-get
+
+
+## Installing dependencies
+
+## Project Creation
+# Bootstrap project creation: Build tools, dependencies and initial boilerplate code
+prompt_new_project() {
   read -p "Hi Dom! You want to start a new project? (y/n): " -n 1 -r
   echo
   if [[ $REPLY =~ ^[Yy]$ ]]
@@ -25,9 +33,10 @@ init_new_project() {
     echo "not yet implemented"
   fi
 }
+## Project Creation
 
 if [ "$1" = "dev" ] ; then
-  prompt_hello
+  prompt_new_project
 elif [ "$1" = "install" ]; then
   echo "not implemented" 
 else
